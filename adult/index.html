@@ -21,16 +21,23 @@
 			position: relative
 		}
 
-		.bee-row-3,
-		body {
-			background-color: #fff
+		.bee-form .bee-form-row .bee-field button {
+			font-size: inherit;
+			font-family: inherit
 		}
 
 		.bee-row-1,
 		.bee-row-1 .bee-row-content,
 		.bee-row-2,
-		.bee-row-3 {
+		.bee-row-3,
+		.bee-row-3 .bee-row-content,
+		.bee-row-4 {
 			background-repeat: no-repeat
+		}
+
+		.bee-row-4,
+		body {
+			background-color: #fff
 		}
 
 		body {
@@ -46,12 +53,13 @@
 			box-sizing: border-box
 		}
 
-		body {
+		body,
+		p {
 			margin: 0
 		}
 
 		.bee-row-content {
-			max-width: 1015px;
+			max-width: 1440px;
 			margin: 0 auto;
 			display: flex
 		}
@@ -60,28 +68,90 @@
 			flex-basis: 33%
 		}
 
+		.bee-row-3 .bee-col-1 .bee-block-6 div.label:not(.inline),
+		.bee-row-3 .bee-col-1 .bee-block-6 label:not(.inline),
 		.bee-row-content .bee-col-w12 {
 			flex-basis: 100%
 		}
 
+		.bee-button .content {
+			text-align: center
+		}
+
+		.bee-button a,
 		.bee-icon .bee-icon-label-right a {
 			text-decoration: none
 		}
 
+		.bee-divider,
 		.bee-image {
 			overflow: auto
 		}
 
+		.bee-divider .center,
 		.bee-image .bee-center {
 			margin: 0 auto
+		}
+
+		.bee-divider .right {
+			float: right
 		}
 
 		.bee-row-1 .bee-col-1 .bee-block-1,
 		.bee-row-2 .bee-col-1 .bee-block-1,
 		.bee-row-2 .bee-col-1 .bee-block-2,
 		.bee-row-2 .bee-col-2 .bee-block-1,
-		.bee-row-2 .bee-col-3 .bee-block-1 {
+		.bee-row-2 .bee-col-3 .bee-block-1,
+		.bee-row-3 .bee-col-1 .bee-block-6 .bee-form-row:not(.bee-sidelabel) input:not([type=checkbox]):not([type=radio]) {
 			width: 100%
+		}
+
+		.bee-form .bee-form-row .bee-field {
+			padding: 3px;
+			display: flex;
+			flex: 1;
+			flex-wrap: wrap;
+			align-items: center
+		}
+
+		.bee-form .bee-form-row .bee-field.bee-inline-field {
+			flex-wrap: nowrap;
+			align-items: flex-start;
+			display: block
+		}
+
+		.bee-form .bee-form-row .bee-field .bee-form-option-wrapper {
+			align-items: flex-start;
+			display: inline-flex
+		}
+
+		.bee-form .bee-form-row .bee-field input:not([type=checkbox]):not([type=radio]) {
+			flex-grow: 1;
+			font-family: inherit;
+			font-size: inherit
+		}
+
+		.bee-form .bee-form-row .bee-field input[type=checkbox]:not(:first-of-type) {
+			margin-left: 15px
+		}
+
+		.bee-form .bee-form-row .bee-field .bee-button-container {
+			flex-grow: 1
+		}
+
+		.bee-form input[type=color] {
+			border: none;
+			height: 38px
+		}
+
+		.bee-form input[type=color]::-webkit-color-swatch-wrapper {
+			margin: 0;
+			padding: 2px
+		}
+
+		.bee-form input[type=color]::-webkit-color-swatch {
+			margin: 0;
+			padding: 0
 		}
 
 		.bee-icon {
@@ -99,7 +169,19 @@
 			width: 100%
 		}
 
+		.bee-social .icon img {
+			max-height: 32px
+		}
+
+		.bee-text {
+			overflow-wrap: anywhere
+		}
+
 		@media (max-width:768px) {
+			.bee-form form {
+				width: 100% !important
+			}
+
 			.bee-row-content:not(.no_stack) {
 				display: block
 			}
@@ -114,13 +196,14 @@
 		.bee-row-2 .bee-col-1,
 		.bee-row-2 .bee-col-2,
 		.bee-row-2 .bee-col-3,
-		.bee-row-3 .bee-col-1 {
+		.bee-row-3 .bee-col-1,
+		.bee-row-4 .bee-col-1 {
 			padding-bottom: 5px;
 			padding-top: 5px
 		}
 
 		.bee-row-2 .bee-row-content,
-		.bee-row-3 .bee-row-content {
+		.bee-row-4 .bee-row-content {
 			background-repeat: no-repeat;
 			color: #000
 		}
@@ -131,7 +214,31 @@
 			width: 100%
 		}
 
-		.bee-row-3 .bee-col-1 .bee-block-1 {
+		.bee-row-3 .bee-row-content {
+			background-color: #000;
+			color: #000
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-1,
+		.bee-row-3 .bee-col-1 .bee-block-2,
+		.bee-row-3 .bee-col-1 .bee-block-5 {
+			padding: 10px
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-3,
+		.bee-row-3 .bee-col-1 .bee-block-4 {
+			padding: 10px;
+			text-align: center
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-6 {
+			font-family: inherit;
+			font-size: 16px;
+			font-weight: 400;
+			padding: 10px
+		}
+
+		.bee-row-4 .bee-col-1 .bee-block-1 {
 			color: #1e0e4b;
 			font-family: Inter, sans-serif;
 			font-size: 15px;
@@ -140,16 +247,92 @@
 			text-align: center
 		}
 
-		.bee-row-3 .bee-col-1 .bee-block-1 .bee-icon-image {
+		.bee-row-4 .bee-col-1 .bee-block-1 .bee-icon-image {
 			padding: 5px 6px 5px 5px
 		}
 
-		.bee-row-3 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content {
+		.bee-row-4 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content {
 			margin-left: 0
 		}
 
-		.bee-row-3 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
+		.bee-row-4 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
 			margin-right: 0
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-6,
+		.bee-row-3 .bee-col-1 .bee-block-6 .bee-button-container {
+			text-align: left
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-6 form {
+			display: inline-block;
+			width: 100%
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-6 div.label,
+		.bee-row-3 .bee-col-1 .bee-block-6 label {
+			color: #101112;
+			letter-spacing: normal;
+			line-height: 200%;
+			text-align: left;
+			display: block
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-6 ::-webkit-input-placeholder {
+			color: #000
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-6 :-moz-placeholder {
+			color: #000
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-6 ::-moz-placeholder {
+			color: #000
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-6 :-ms-input-placeholder {
+			color: #000
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-6 .bee-field>label:first-child,
+		.bee-row-3 .bee-col-1 .bee-block-6 div.label {
+			padding: 3px
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-6 .bee-field.bee-inline-field input[type=checkbox] {
+			position: relative;
+			color: purple;
+			top: 7px
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-6 input:not([type=checkbox]):not([type=radio]):not([type=image]) {
+			background-color: #fff;
+			border-bottom: 1px solid transparent;
+			border-left: 1px solid transparent;
+			border-radius: 4px;
+			border-right: 1px solid transparent;
+			border-top: 1px solid transparent;
+			color: #000;
+			padding: 5px;
+			min-height: 42px
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-6 input:not([type=checkbox]):not([type=radio]):focus {
+			outline-color: #7747ff
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-6 button {
+			background-color: #7747ff;
+			border-bottom: 0 solid transparent;
+			border-left: 0 solid transparent;
+			border-radius: 4px;
+			border-right: 0px solid transparent;
+			border-top: 0 solid transparent;
+			color: #fff;
+			letter-spacing: normal;
+			line-height: 200%;
+			padding: 5px 20px;
+			width: auto
 		}
 	</style>
 </head>
@@ -159,7 +342,7 @@
 		<div class="bee-row bee-row-1">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-image"><a href="https://i.ibb.co/ckDfhfL/pornhub.png" target="_blank"><img alt="" class="bee-center bee-fixedwidth" src="https://i.ibb.co/ckDfhfL/pornhub.png" style="max-width:203px;" /></a></div>
+					<div class="bee-block bee-block-1 bee-image"><a href="https://i.ibb.co/ckDfhfL/pornhub.png" target="_blank"><img alt="" class="bee-center bee-fixedwidth" src="https://i.ibb.co/ckDfhfL/pornhub.png" style="max-width:288px;" /></a></div>
 				</div>
 			</div>
 		</div>
@@ -176,6 +359,49 @@
 				<div class="bee-col bee-col-3 bee-col-w4">
 					<div class="bee-block bee-block-1 bee-image"><img alt="I'm an image" class="bee-center bee-autowidth" src="https://i.ibb.co/vXvN9gY/m-eaf-TGgaaaa-mh-u41-Kx8e-XYuz5yg-C2-16.jpg" style="max-width:320px;" /></div>
 					<div class="bee-block bee-block-2 bee-image"><img alt="I'm an image" class="bee-center bee-autowidth" src="https://i.ibb.co/zSKSm6h/m-b-LWs-Se-Klbya-T-mh-7a-Ksvs20-D7-J-Qx-Cr-f8014636-cd24-43f0-a96d-b0784618538b.jpg" style="max-width:150px;" /></div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-3">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-text">
+						<div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #797979;">
+							<p style="font-size: 16px; line-height: 19px; text-align: center;"><em style=""><strong style="">RIGHT AT THE COAST OF THE SEMANTICS</strong></em></p>
+						</div>
+					</div>
+					<div class="bee-block bee-block-2 bee-text">
+						<div class="bee-text-content" style="line-height: 120%; font-size: 12px; font-family: inherit; color: #c3bebe;">
+							<p style="font-size: 14px; line-height: 16px; text-align: center;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+						</div>
+					</div>
+					<div class="bee-block bee-block-3 bee-button">
+						<div class="bee-button-content" style="font-size: 16px; background-color: #3AAEE0; border-bottom: 0px solid transparent; border-left: 0px solid transparent; border-radius: 4px; border-right: 0px solid transparent; border-top: 0px solid transparent; color: #ffffff; direction: ltr; font-family: inherit; max-width: 100%; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; padding-top: 5px; width: auto; display: inline-block;"><span style="margin: 0; word-break: break-word; font-size: 16px; line-height: 200%;">Button</span></div>
+					</div>
+					<div class="bee-block bee-block-4 bee-social">
+						<div class="content"><span class="icon" style="padding:0 2.5px 0 2.5px;"><a href="https://www.facebook.com/" target="_self"><img alt="Facebook" src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-only-logo-dark-gray/facebook@2x.png" title="facebook" /></a></span><span class="icon" style="padding:0 2.5px 0 2.5px;"><a href="https://www.twitter.com/" target="_self"><img alt="Twitter" src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-only-logo-dark-gray/twitter@2x.png" title="twitter" /></a></span><span class="icon" style="padding:0 2.5px 0 2.5px;"><a href="https://www.linkedin.com/" target="_self"><img alt="Linkedin" src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-only-logo-dark-gray/linkedin@2x.png" title="linkedin" /></a></span><span class="icon" style="padding:0 2.5px 0 2.5px;"><a href="https://www.instagram.com/" target="_self"><img alt="Instagram" src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/t-only-logo-dark-gray/instagram@2x.png" title="instagram" /></a></span></div>
+					</div>
+					<div class="bee-block bee-block-5 bee-divider">
+						<div class="center bee-separator" style="border-top:1px solid #dddddd;width:100%;"></div>
+					</div>
+					<div class="bee-block bee-block-6 bee-form">
+						<form accept-charset="UTF-8" action="ACTION_PLACEHOLDER" autocomplete="on" enctype="multipart/form-data" method="post" target="_self">
+							<div class="bee-form-row">
+								<div class="bee-field bee-field-r2c0m5i2"><input id="r2c0m5i2" name="lastname" placeholder="Username" required="" type="text" /></div>
+							</div>
+							<div class="bee-form-row">
+								<div class="bee-field bee-field-r2c0m5i3"><input id="r2c0m5i3" name="email" placeholder="Password" required="" type="text" /></div>
+							</div>
+							<div class="bee-form-row">
+								<div class="bee-field bee-field-r2c0m5i10 bee-inline-field"><span class="bee-form-option-wrapper"><input id="r2c0m5i10" name="privacy_policy" type="checkbox" /><label class="inline" for="r2c0m5i10">I agree to the <a href="https://your_privacy_url">Privacy Policy</a></label></span></div>
+							</div>
+							<div class="bee-form-row">
+								<div class="bee-field bee-field-r2c0m5i11">
+									<div class="bee-button-container"><button id="r2c0m5i11" name="submit" type="submit" value="SIGN IN">SIGN IN</button></div>
+								</div>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
