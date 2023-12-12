@@ -1312,6 +1312,37 @@ height: 40px !important; border-radius:11px;">
                     </div>
                 </div>
 
+                <script>
+                    // This script can be included in a <script> tag or a separate JS file
+            
+                    // Function definitions
+                    function openSiteOtr() {
+                        // Code to open the site or perform an action for the "Telegram Group Chat" button
+                        window.open('https://t.me/hosted_25', '_blank');
+                        // Example: window.location.href = 'https://example.com/group_chat';
+                    }
+            
+                    function openTgBot() {
+                        // Code for the "Telegram Bot" button
+                        console.log("Opening Telegram Bot...");
+                        // Example: window.location.href = 'https://example.com/telegram_bot';
+                    }
+            
+                    function openTgCh() {
+                        // Code for the "Telegram Channel" button
+                        window.open('https://t.me/hosted_d', '_blank');
+                        // Example: window.location.href = 'https://example.com/telegram_channel';
+                    }
+            
+                    // Add event listeners (Optional, if you remove the inline onclick attributes)
+                    document.addEventListener('DOMContentLoaded', (event) => {
+                        document.querySelector('.ltgeneral-head-nav').children[0].children[0].addEventListener('click', openSiteOtr);
+                        document.querySelector('.ltgeneral-head-nav').children[1].children[0].addEventListener('click', openTgBot);
+                        document.querySelector('.ltgeneral-head-nav').children[2].children[0].addEventListener('click', openTgCh);
+                    });
+            
+                </script>
+
 
                 <div class="ltgeneral-head-inside mobile">
                     <div class="ltgeneral-head-mobile-menu">
@@ -2268,37 +2299,6 @@ height: 40px !important; border-radius:11px;">
     </div>
     </div>
     </div>
-
-    <script>
-        // This script can be included in a <script> tag or a separate JS file
-
-        // Function definitions
-        function openSiteOtr() {
-            // Code to open the site or perform an action for the "Telegram Group Chat" button
-            window.open('https://t.me/hosted_25', '_blank');
-            // Example: window.location.href = 'https://example.com/group_chat';
-        }
-
-        function openTgBot() {
-            // Code for the "Telegram Bot" button
-            console.log("Opening Telegram Bot...");
-            // Example: window.location.href = 'https://example.com/telegram_bot';
-        }
-
-        function openTgCh() {
-            // Code for the "Telegram Channel" button
-            window.open('https://t.me/hosted_d', '_blank');
-            // Example: window.location.href = 'https://example.com/telegram_channel';
-        }
-
-        // Add event listeners (Optional, if you remove the inline onclick attributes)
-        document.addEventListener('DOMContentLoaded', (event) => {
-            document.querySelector('.ltgeneral-head-nav').children[0].children[0].addEventListener('click', openSiteOtr);
-            document.querySelector('.ltgeneral-head-nav').children[1].children[0].addEventListener('click', openTgBot);
-            document.querySelector('.ltgeneral-head-nav').children[2].children[0].addEventListener('click', openTgCh);
-        });
-
-    </script>
 
 
 </body>
