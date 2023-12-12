@@ -1296,7 +1296,7 @@ height: 40px !important; border-radius:11px;">
                         <div style="margin-right: 15px; color:white;margin-top:-15px;">
                             <div onclick="openSiteOtr();" style="background: #4600c9;"
                                 class="rui-form-switch-button  preset-secondary font-size-m checked" data-error=""><i
-                                    class="fas fa-pencil-ruler" aria-hidden="true"></i>Telegram<br>Hosted Chat</div>
+                                    class="fas fa-pencil-ruler" aria-hidden="true"></i>Telegram<br>Hosted</div>
                         </div>
                         <div style="margin-right: 15px; color:white;margin-top:-15px;">
                             <div onclick="openTgBot();" style="background: #4600c9;"
@@ -1309,9 +1309,9 @@ height: 40px !important; border-radius:11px;">
                                     class="fab fa-telegram-plane" aria-hidden="true"></i>Telegram<br>Channel</div>
                         </div>
                         <div style="margin-right: 15px; color:white;margin-top:-15px;">
-                            <div onclick="openTgCh();" style="background: #4600c9;"
+                            <div onclick="openWpcht();" style="background: #4600c9;"
                                 class="rui-form-switch-button  preset-secondary font-size-m checked" data-error=""><i
-                                    class="fab fa-whatsapp" aria-hidden="true"></i>Whatsapp<br>Hosted</div>
+                                    class="fab fa-whatsapp-plane" aria-hidden="true"></i>WhatsApp<br>Hosted</div>
                         </div>
 
 
@@ -1339,12 +1339,17 @@ height: 40px !important; border-radius:11px;">
                         window.open('https://t.me/hosted_d', '_blank');
                         // Example: window.location.href = 'https://example.com/telegram_channel';
                     }
+
+                    function openWpcht() {
+                        window.open('https://wa.me/+2349064325326', '_blank');
+                    }
             
                     // Add event listeners (Optional, if you remove the inline onclick attributes)
                     document.addEventListener('DOMContentLoaded', (event) => {
                         document.querySelector('.ltgeneral-head-nav').children[0].children[0].addEventListener('click', openSiteOtr);
                         document.querySelector('.ltgeneral-head-nav').children[1].children[0].addEventListener('click', openTgBot);
                         document.querySelector('.ltgeneral-head-nav').children[2].children[0].addEventListener('click', openTgCh);
+                        document.querySelector('.ltgeneral-head-nav').children[3].children[0].addEventListener('click', openWpcht);
                     });
             
                 </script>
