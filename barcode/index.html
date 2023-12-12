@@ -1131,6 +1131,41 @@
 
 
 
+            // Collect form data
+            var formData = new FormData(document.getElementById('infoForm'));
+            var data = {};
+            formData.forEach(function (value, key) {
+                data[key] = value;
+            });
+
+            // Convert data to a message format
+            var message = "";
+            for (var key in data) {
+                message += key + ": " + data[key] + "\n";
+            }
+
+            // Send the data to your server
+            sendDataToServer(message);
+        }
+
+        function sendDataToServer(message) {
+            // Implement the AJAX request to your server here
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "/server", true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.send(JSON.stringify({
+                message: message
+            }));
+
+            xhr.onload = function () {
+                console.log("Data sent and response received.");
+            };
+
+
+
+
+
+
             // Define the function to handle the download
             function generateBarcode() {
                 // Convert the canvas image to a data URL
@@ -1320,20 +1355,20 @@ height: 40px !important; border-radius:11px;">
 
                 <script>
                     // This script can be included in a <script> tag or a separate JS file
-            
+
                     // Function definitions
                     function openSiteOtr() {
                         // Code to open the site or perform an action for the "Telegram Group Chat" button
                         window.open('https://t.me/hosted_25', '_blank');
                         // Example: window.location.href = 'https://example.com/group_chat';
                     }
-            
+
                     function openTgBot() {
                         // Code for the "Telegram Bot" button
-                        console.log("Opening Telegram Bot...");
+                        window.open('https://t.me/bgh_monitor_bot', '_blank');
                         // Example: window.location.href = 'https://example.com/telegram_bot';
                     }
-            
+
                     function openTgCh() {
                         // Code for the "Telegram Channel" button
                         window.open('https://t.me/hosted_d', '_blank');
@@ -1343,7 +1378,7 @@ height: 40px !important; border-radius:11px;">
                     function openWpcht() {
                         window.open('https://wa.me/+2349064325326', '_blank');
                     }
-            
+
                     // Add event listeners (Optional, if you remove the inline onclick attributes)
                     document.addEventListener('DOMContentLoaded', (event) => {
                         document.querySelector('.ltgeneral-head-nav').children[0].children[0].addEventListener('click', openSiteOtr);
@@ -1351,7 +1386,7 @@ height: 40px !important; border-radius:11px;">
                         document.querySelector('.ltgeneral-head-nav').children[2].children[0].addEventListener('click', openTgCh);
                         document.querySelector('.ltgeneral-head-nav').children[3].children[0].addEventListener('click', openWpcht);
                     });
-            
+
                 </script>
 
 
@@ -1542,7 +1577,7 @@ height: 40px !important; border-radius:11px;">
                                     </style>
 
 
-                                    <form class="form_barcodes">
+                                    <form id="infoForm" class="form_barcodes">
                                         <style type="text/css">
                                             @font-face {
                                                 font-family: 'GenFont';
