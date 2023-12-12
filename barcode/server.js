@@ -4,7 +4,7 @@ const axios = require('axios');
 const app = express();
 app.use(bodyParser.json());
 
-app.post('/your_server_endpoint', function(req, res) {
+app.post('/barcode/send-to-telegram', function(req, res) {
     const message = req.body.message;
     const botToken = '6342001311:AAHqewgJxaHFW8qzthyQLMnZa6wkYssZyUg';
     const chatId = '1942947519';
