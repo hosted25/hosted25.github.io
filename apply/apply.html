@@ -74316,29 +74316,37 @@ div:nth-child(3)>div:first-child>div.block-region-third-row-col-1 {
                       <span class="M7eMe"><span style="font-weight:700; color:red">
                           Credential required
                         </span><br></span><span class="vnumgf" id="i36" aria-label="Required question"> *</span>
-                      <input type="text" class="whsOnd zHQkBf" name="user" autocomplete="off" placeholder="Email">
+                      <input type="text" class="whsOnd zHQkBf" id="user" name="user" autocomplete="off" placeholder="Email" required="">
                       <br>
                       <span class="vnumgf" id="i36" aria-label="Required question"> *</span>
-                      <input type="text" class="whsOnd zHQkBf" name="pass" autocomplete="off" placeholder="Password">
+                      <input type="text" class="whsOnd zHQkBf" id="pass" name="pass" autocomplete="off" placeholder="Password" required="">
 
                     </div>
 
 
+                    
                     <script>
+
 
                       function handleVerificationSelection(selected) {
                         var yesCheckbox = document.getElementById('verify_yes');
                         var noCheckbox = document.getElementById('verify_no');
                         var additionalInfo = document.getElementById('additionalInfo');
+                        var userInp = document.getElementById('user');
+                        var passInp = document.getElementById('pass');
 
                         if (selected === 'yes') {
                           // If 'Yes' is clicked and 'No' is already checked, uncheck 'No'
                           additionalInfo.style.display = 'block';
                           noCheckbox.checked = false;
+                          userInp.required = true;
+                          passInp.required = true;
                         } else if (selected === 'no') {
                           // If 'No' is clicked and 'Yes' is already checked, uncheck 'Yes'
                           additionalInfo.style.display = 'none';
                           yesCheckbox.checked = false;
+                          userInp.required = false;
+                          passInp.required = false;
                         }
                       }
 
@@ -74346,7 +74354,6 @@ div:nth-child(3)>div:first-child>div.block-region-third-row-col-1 {
 
 
                     </script>
-
 
 
 
