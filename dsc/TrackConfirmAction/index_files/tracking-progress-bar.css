@@ -339,7 +339,7 @@ hr.horizontal-line.red-banner {
 
 .latest-update-banner-wrapper.green-banner {
 	border-left-color: hsl(0, 61%, 33%) !important;
-	background-color: #ecf3ec;
+	background-color: #f3ecec;
 	padding: 20px 20px 20px 20px;
 	border-left: 10px solid
 }
