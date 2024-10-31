@@ -1,230 +1,531 @@
 <!DOCTYPE html>
-<html>
+<!-- saved from url=(0026)https://onlyfake.org/login -->
+<html class="default" lang="en">
+<div id="in-page-channel-node-id" data-channel-name="in_page_channel_iiWeTh"></div>
 
 <head>
-  <title>Slide Navbar</title>
-  <link rel="stylesheet" type="text/css" href="slide navbar style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf-token" content="yKBH2JOL1G8BtKW46nnAMfG8y7LnjJ7FHq9R7cA6">
+  <title>
+    Login | Document Templates Generator
+  </title>
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/svg+xml" href="https://onlyfake.org/assets/css/mainpage/favicon.svg">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+  </style>
+  <link href="./index_files/select2.min.css" rel="stylesheet">
+  <link rel="preload" as="style" href="./index_files/app-c8823e58.css">
+  <link rel="stylesheet" href="./index_files/app-c8823e58.css">
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      font-family: 'Jost', sans-serif;
-      background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+      font-family: montserrat, sans-serif !important;
     }
 
-    .main {
-      width: 350px;
-      height: 500px;
-      background: red;
-      overflow: hidden;
-      background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
-      border-radius: 10px;
-      box-shadow: 5px 20px 50px #000;
+    @font-face {
+      font-family: montserrat;
+      src: url(/font/Montserrat-Regular.eot);
+      src: url(/font/Montserrat-Regular.eot?#iefix) format('embedded-opentype'), url(/font/Montserrat-Regular.woff) format('woff'), url(/font/Montserrat-Regular.ttf) format('truetype');
+      font-weight: 400;
+      font-style: normal
     }
 
-    #chk {
-      display: none;
+    @font-face {
+      font-family: montserrat;
+      src: url(/font/Montserrat-Medium.eot);
+      src: url(/font/Montserrat-Medium.eot?#iefix) format('embedded-opentype'), url(/font/Montserrat-Medium.woff) format('woff'), url(/font/Montserrat-Medium.ttf) format('truetype');
+      font-weight: 500;
+      font-style: normal
     }
 
-    .signup {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      margin-bottom: auto;
+    @font-face {
+      font-family: montserrat;
+      src: url(/font/Montserrat-SemiBold.eot);
+      src: url(/font/Montserrat-SemiBold.eot?#iefix) format('embedded-opentype'), url(/font/Montserrat-SemiBold.woff) format('woff'), url(/font/Montserrat-SemiBold.ttf) format('truetype');
+      font-weight: 600;
+      font-style: normal
     }
 
-    label {
-      color: #fff;
-      font-size: 2.3em;
-      justify-content: center;
-      display: flex;
-      margin: 50px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: .5s ease-in-out;
+    @font-face {
+      font-family: montserrat;
+      src: url(/font/Montserrat-Bold.eot);
+      src: url(/font/Montserrat-Bold.eot?#iefix) format('embedded-opentype'), url(/font/Montserrat-Bold.woff) format('woff'), url(/font/Montserrat-Bold.ttf) format('truetype');
+      font-weight: 700;
+      font-style: normal
+    }
+  </style>
+  <style>
+    /* devanagari */
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 100;
+      src: url(chrome-extension://dgejbgnnbfnaleggmgdmmdkklpgfkcdp/assets/poppins/v20/pxiGyp8kv8JHgFVrLPTucXtAKPY.woff2) format('woff2');
+      unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
     }
 
-    input {
-      width: 60%;
-      height: 10px;
-      background: #e0dede;
-      justify-content: center;
-      display: flex;
-      margin: 20px auto;
-      padding: 12px;
-      border: none;
-      outline: none;
-      border-radius: 5px;
+    /* latin-ext */
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 100;
+      src: url(chrome-extension://dgejbgnnbfnaleggmgdmmdkklpgfkcdp/assets/poppins/v20/pxiGyp8kv8JHgFVrLPTufntAKPY.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
     }
 
-    button {
-      width: 60%;
-      height: 40px;
-      margin: 10px auto;
-      justify-content: center;
-      display: block;
-      color: #fff;
-      background: #573b8a;
-      font-size: 1em;
-      font-weight: bold;
-      margin-top: 30px;
-      outline: none;
-      border: none;
-      border-radius: 5px;
-      transition: .2s ease-in;
-      cursor: pointer;
+    /* latin */
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 100;
+      src: url(chrome-extension://dgejbgnnbfnaleggmgdmmdkklpgfkcdp/assets/poppins/v20/pxiGyp8kv8JHgFVrLPTucHtA.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
 
-    button:hover {
-      background: #6d44b8;
+    /* devanagari */
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      src: url(chrome-extension://dgejbgnnbfnaleggmgdmmdkklpgfkcdp/assets/poppins/v20/pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2) format('woff2');
+      unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
     }
 
-    .login {
-      height: 460px;
-      background: #eee;
-      border-radius: 60% / 10%;
-      transform: translateY(-180px);
-      transition: .8s ease-in-out;
+    /* latin-ext */
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      src: url(chrome-extension://dgejbgnnbfnaleggmgdmmdkklpgfkcdp/assets/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
     }
 
-    .login label {
-      color: #573b8a;
-      transform: scale(.6);
+    /* latin */
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      src: url(chrome-extension://dgejbgnnbfnaleggmgdmmdkklpgfkcdp/assets/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
 
-    #chk:checked~.login {
-      transform: translateY(-500px);
+    /* poppins light */
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 300;
+      src: url(chrome-extension://dgejbgnnbfnaleggmgdmmdkklpgfkcdp/assets/poppins/Poppins-Light.ttf) format('truetype');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
 
-    #chk:checked~.login label {
-      transform: scale(1);
+    /* poppins regular */
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      src: url(chrome-extension://dgejbgnnbfnaleggmgdmmdkklpgfkcdp/assets/poppins/Poppins-Regular.ttf) format('truetype');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
 
-    #chk:checked~.signup label {
-      transform: scale(.6);
+    /* poppins thin */
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 100;
+      src: url(chrome-extension://dgejbgnnbfnaleggmgdmmdkklpgfkcdp/assets/poppins/Poppins-Thin.ttf) format('truetype');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* poppins medium */
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      src: url(chrome-extension://dgejbgnnbfnaleggmgdmmdkklpgfkcdp/assets/poppins/Poppins-Medium.ttf) format('truetype');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* poppins semi bold */
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      src: url(chrome-extension://dgejbgnnbfnaleggmgdmmdkklpgfkcdp/assets/poppins/Poppins-SemiBold.ttf) format('truetype');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* poppins bold */
+    @font-face {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      src: url(chrome-extension://dgejbgnnbfnaleggmgdmmdkklpgfkcdp/assets/poppins/Poppins-Bold.ttf) format('truetype');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
   </style>
 </head>
 
-<body>
-  <div class="main">
-    <input type="checkbox" id="chk" aria-hidden="true">
-
-    <div class="signup">
-      <form>
-        <label for="chk" aria-hidden="true">Sign up</label>
-        <p type="text" name="txt">To get your account setup you have to send a tips, for the continuetion service we provide, will want to get a domain for this website</p>
-        <input type="email" name="email" placeholder="Email" required="">
-        <input type="number" name="broj" placeholder="BrojTelefona" required="">
-        <input type="password" name="pswd" placeholder="Password" required="">
-        <button>Sign up</button>
-        <br>
-      </form>
+<body class="font-sans text-gray-900 antialiased"
+  style="background-image: url(../../newBarLogin/svg/back.png)!important;">
+  <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100 dark:bg-gray-900"
+    style="background-image: url(../../newBarLogin/svg/back.png)!important;">
+    <div class="wrapper1" style="box-sizing: border-box !important;
+            padding: 20px 15px 40px 15px !important;
+            width: 447px !important;
+            height: 38px !important;
+            background: #252b33!important;
+            border: 2px solid #4D268D !important;
+            box-shadow: -10px -13px 27px -6px rgba(92, 92, 92, 0.25), 8px 11px 15px -2px rgba(0, 0, 0, 0.25) !important;
+            backdrop-filter: blur(15px) !important;
+            /* border-radius: 26px !important; */
+            border-radius: .5rem;
+            font-size: 21px;
+            font-weight: bolder;max-width:100%!important;">
+      <div
+        style="margin-bottom:10px;text-align:center;color: #ad90db;text-shadow: 0px 4px 15px rgba(77, 38, 141, 0.8);margin-top: -3px !important;user-select: none;"
+        class="text-center mt-4 name">
+        GENERATOR 3.0
+      </div>
     </div>
-    <br>
+    <div
+      class="wrapper w-full sm:max-w-md mt-6 px-6 py-4 bg-white dark:bg-gray-800 shadow-md overflow-hidden sm:rounded-lg"
+      style="box-sizing: border-box !important;
+            padding: 20px 15px 40px 15px !important;
+            background: #252b33!important;
+            border: 2px solid #4D268D !important;
+            box-shadow: -10px -13px 27px -6px rgba(92, 92, 92, 0.25), 8px 11px 15px -2px rgba(0, 0, 0, 0.25) !important;
+            backdrop-filter: blur(15px) !important;
+            border-radius: .5rem;
+            font-size: 21px;
+            font-weight: bolder;">
 
-    <div class="login">
       <form id="login-form">
-        <label for="chk" aria-hidden="true">Login</label>
-        <input type="email" name="email" placeholder="Email" required="">
-        <input type="password" name="pswd" placeholder="Password" required="">
-        <button>Login</button>
+
+        <div>
+          <label class="block font-medium text-sm text-gray-700 dark:text-gray-300" style="color: white;
+            font-family: montserrat,sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+            ;" for="name">
+            Login or Email
+          </label>
+          <input
+            class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm block mt-1 w-full"
+            style="color: #eee;
+  font-weight: 600;
+  font-size: 16px;
+  background: 0 0;
+  border-radius: 10px;
+  background: #232931;
+    background-color: rgb(35, 41, 49);
+  border: 2px solid #4D268D;
+    border-top-color: rgb(78, 204, 163);
+    border-right-color: rgb(78, 204, 163);
+    border-bottom-color: rgb(78, 204, 163);
+    border-left-color: rgb(78, 204, 163);
+  border-top-color: rgb(78, 204, 163);
+  border-right-color: rgb(78, 204, 163);
+  border-bottom-color: rgb(78, 204, 163);
+  border-left-color: rgb(78, 204, 163);
+  background-color: #232931;
+  border-color: #4D268D;" id="username" type="text" name="username" required="required" autofocus="autofocus"
+            autocomplete="username">
+        </div>
+
+        <div class="mt-4">
+          <label class="block font-medium text-sm text-gray-700 dark:text-gray-300" style="color: white;
+            font-family: montserrat,sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+            ;" for="password">
+            Password
+          </label>
+          <input
+            class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm block mt-1 w-full"
+            style="color: #eee;
+  font-weight: 600;
+  font-size: 16px;
+  background: 0 0;
+  border-radius: 10px;
+  background: #232931;
+    background-color: rgb(35, 41, 49);
+  border: 2px solid #4D268D;
+    border-top-color: rgb(78, 204, 163);
+    border-right-color: rgb(78, 204, 163);
+    border-bottom-color: rgb(78, 204, 163);
+    border-left-color: rgb(78, 204, 163);
+  border-top-color: rgb(78, 204, 163);
+  border-right-color: rgb(78, 204, 163);
+  border-bottom-color: rgb(78, 204, 163);
+  border-left-color: rgb(78, 204, 163);
+  background-color: #232931;
+  border-color: #4D268D;" id="password" type="password" name="password" required="required"
+            autocomplete="current-password">
+        </div>
+
+        <div class="block mt-4">
+          <label for="remember_me" class="inline-flex items-center">
+            <input id="remember_me" type="checkbox"
+              class="rounded dark:bg-gray-900 border-gray-300 dark:border-gray-700 text-indigo-600 shadow-sm focus:ring-indigo-500 dark:focus:ring-indigo-600 dark:focus:ring-offset-gray-800"
+              name="remember">
+            <span class="ms-2 text-sm text-gray-600 dark:text-gray-400" style="color: white;
+                font-family: montserrat,sans-serif;
+                font-weight: 600;
+                font-size: 0.9rem;">Remember me</span>
+          </label>
+          <a style="float: right;
+            margin-top: 4.8px;color: white;
+            font-family: montserrat,sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;"
+            class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800"
+            href="https://onlyfake.org/register">
+            Haven't registered yet?
+          </a>
+        </div>
+        <div class="flex items-center justify-end mt-4">
+          <a style="color: white;
+                font-family: montserrat,sans-serif;
+                font-weight: 600;
+                font-size: 0.9rem;"
+            class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800"
+            href="https://onlyfake.org/forgot-password">
+            Forgot your password?
+          </a>
+          <button type="submit"
+            class="inline-flex items-center px-4 py-2 bg-gray-800 dark:bg-gray-200 border border-transparent rounded-md font-semibold text-xs text-white dark:text-gray-800 uppercase tracking-widest hover:bg-gray-700 dark:hover:bg-white focus:bg-gray-700 dark:focus:bg-white active:bg-gray-900 dark:active:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 transition ease-in-out duration-150 ms-3"
+            style="background: #4D268D; colo: #fff;">
+            Log in
+          </button>
+        </div>
       </form>
+
+      <!-- Error Message -->
+      <div id="error-message" style="color: red; font-weight: bold; margin-top: 10px; display: none;"></div>
+
     </div>
-  </div>
 
-  <!-- Error Message -->
-  <div id="error-message" style="color: red; font-weight: bold; margin-top: 10px; display: none;"></div>
-
-  </div>
-
-  <!-- Home Content (Will be loaded dynamically after login) -->
-  <div id="home-container" style="display:none;">
-    <!-- Home content will be dynamically loaded here -->
-  </div>
+    <!-- Home Content (Will be loaded dynamically after login) -->
+    <div id="home-container" style="display:none;">
+      <!-- Home content will be dynamically loaded here -->
+    </div>
 
 
+    <div id="fs_div_all" style="all:initial;"><template shadowrootmode="open">
+        <div class="mainExtCont"
+          style="position:fixed; top:20px;right:20px; z-index:2147483647;box-shadow: 1px -1px 17px #888888;border-radius:10px;">
+          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&amp;display=swap"
+            rel="stylesheet">
+          <div class="mainExtSubCont"></div>
+        </div>
+        <div class="extOtherPopups"></div>
+        <style>
+          /* devanagari */
+          @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 100;
+            src: url(chrome-extension://dgejbgnnbfnaleggmgdmmdkklpgfkcdp/assets/poppins/v20/pxiGyp8kv8JHgFVrLPTucXtAKPY.woff2) format('woff2');
+            unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+          }
 
-  <!-- Client-side JavaScript -->
-  <script>
-    const loginForm = document.getElementById('login-form');
-    const homeContainer = document.getElementById('home-container');
-    const loginContainer = document.getElementById('login-container');
-    const errorMessage = document.getElementById('error-message');
+          /* latin-ext */
+          @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 100;
+            src: url(chrome-extension://dgejbgnnbfnaleggmgdmmdkklpgfkcdp/assets/poppins/v20/pxiGyp8kv8JHgFVrLPTufntAKPY.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+          }
 
-    loginForm.addEventListener('submit', async function (event) {
-      event.preventDefault(); // Prevent form submission
+          /* latin */
+          @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 100;
+            src: url(chrome-extension://dgejbgnnbfnaleggmgdmmdkklpgfkcdp/assets/poppins/v20/pxiGyp8kv8JHgFVrLPTucHtA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+          }
 
-      const username = document.getElementById('username').value;
-      const password = document.getElementById('password').value;
+          /* devanagari */
+          @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            src: url(chrome-extension://dgejbgnnbfnaleggmgdmmdkklpgfkcdp/assets/poppins/v20/pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2) format('woff2');
+            unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+          }
 
-      try {
-        // Fetch the user data from user_data.json
-        const response = await fetch('user_data.json');
-        const data = await response.json();
+          /* latin-ext */
+          @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            src: url(chrome-extension://dgejbgnnbfnaleggmgdmmdkklpgfkcdp/assets/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+          }
 
-        // Find the user in the JSON data
-        const user = data.users.find(u => u.username === username && u.password === password);
+          /* latin */
+          @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            src: url(chrome-extension://dgejbgnnbfnaleggmgdmmdkklpgfkcdp/assets/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+          }
 
-        if (user) {
-          const token = generateToken(); // Generate token after successful login
+          /* poppins light */
+          @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 300;
+            src: url(chrome-extension://dgejbgnnbfnaleggmgdmmdkklpgfkcdp/assets/poppins/Poppins-Light.ttf) format('truetype');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+          }
 
-          // Store the token in localStorage
-          localStorage.setItem('authToken', token);
+          /* poppins regular */
+          @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            src: url(chrome-extension://dgejbgnnbfnaleggmgdmmdkklpgfkcdp/assets/poppins/Poppins-Regular.ttf) format('truetype');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+          }
 
-          // Load home content dynamically after login
-          loadHomeContent();
-        } else {
-          show('Oops', 'Invalid username or password.', 'error');
+          /* poppins thin */
+          @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 100;
+            src: url(chrome-extension://dgejbgnnbfnaleggmgdmmdkklpgfkcdp/assets/poppins/Poppins-Thin.ttf) format('truetype');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+          }
+
+          /* poppins medium */
+          @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            src: url(chrome-extension://dgejbgnnbfnaleggmgdmmdkklpgfkcdp/assets/poppins/Poppins-Medium.ttf) format('truetype');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+          }
+
+          /* poppins semi bold */
+          @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            src: url(chrome-extension://dgejbgnnbfnaleggmgdmmdkklpgfkcdp/assets/poppins/Poppins-SemiBold.ttf) format('truetype');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+          }
+
+          /* poppins bold */
+          @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            src: url(chrome-extension://dgejbgnnbfnaleggmgdmmdkklpgfkcdp/assets/poppins/Poppins-Bold.ttf) format('truetype');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+          }
+
+
+          .extOtherPopups {
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            top: 240px;
+            right: 0;
+            z-index: 2147483647;
+          }
+
+          [event_type="click"] {
+            cursor: pointer;
+          }
+        </style>
+      </template></div>
+
+
+
+    <!-- Client-side JavaScript -->
+    <script>
+      const loginForm = document.getElementById('login-form');
+      const homeContainer = document.getElementById('home-container');
+      const loginContainer = document.getElementById('login-container');
+      const errorMessage = document.getElementById('error-message');
+
+      loginForm.addEventListener('submit', async function (event) {
+        event.preventDefault(); // Prevent form submission
+
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        try {
+          // Fetch the user data from user_data.json
+          const response = await fetch('user_data.json');
+          const data = await response.json();
+
+          // Find the user in the JSON data
+          const user = data.users.find(u => u.username === username && u.password === password);
+
+          if (user) {
+            const token = generateToken(); // Generate token after successful login
+
+            // Store the token in localStorage
+            localStorage.setItem('authToken', token);
+
+            // Load home content dynamically after login
+            loadHomeContent();
+          } else {
+            show('Oops', 'Invalid username or password.', 'error');
+          }
+        } catch (error) {
+          show('Oops', 'Error occurred while logging in.', 'error');
         }
-      } catch (error) {
-        show('Oops', 'Error occurred while logging in.', 'error');
-      }
-    });
-
-    // Function to generate a simple token
-    function generateToken() {
-      return Math.random().toString(36).substr(2); // Random string as token
-    }
-
-    // Function to load home content
-    async function loadHomeContent() {
-      try {
-        const homeResponse = await fetch('home.html'); // Load home.html content
-        const homeContent = await homeResponse.text();
-
-        // Hide the login form and display the home content
-        loginContainer.style.display = 'none';
-        homeContainer.innerHTML = homeContent;
-        homeContainer.style.display = 'block';
-
-      } catch (error) {
-        show('Oops', 'Error loading home content.', 'error');
-      }
-    }
-
-    // Function to show sweetalert error
-    function show(title, text, icon) {
-      Swal.fire({
-        title,
-        text,
-        icon,
       });
-    }
 
-    // On page load, check if the user is already logged in by checking the token
-    window.addEventListener('load', function () {
-      const token = localStorage.getItem('authToken');
-      if (token) {
-        loadHomeContent(); // Load the home content if token exists
+      // Function to generate a simple token
+      function generateToken() {
+        return Math.random().toString(36).substr(2); // Random string as token
       }
-    });
-  </script>
+
+      // Function to load home content
+      async function loadHomeContent() {
+        try {
+          const homeResponse = await fetch('home.html'); // Load home.html content
+          const homeContent = await homeResponse.text();
+
+          // Hide the login form and display the home content
+          loginContainer.style.display = 'none';
+          homeContainer.innerHTML = homeContent;
+          homeContainer.style.display = 'block';
+
+        } catch (error) {
+          show('Oops', 'Error loading home content.', 'error');
+        }
+      }
+
+      // Function to show sweetalert error
+      function show(title, text, icon) {
+        Swal.fire({
+          title,
+          text,
+          icon,
+        });
+      }
+
+      // On page load, check if the user is already logged in by checking the token
+      window.addEventListener('load', function () {
+        const token = localStorage.getItem('authToken');
+        if (token) {
+          loadHomeContent(); // Load the home content if token exists
+        }
+      });
+    </script>
 </body>
 
 </html>
